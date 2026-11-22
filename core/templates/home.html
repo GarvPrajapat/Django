@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% block layout %}
+    {% csrf_token %}
+    <div class="login-card">
+        <div id="selector">
+            <button id="login-button">Login</button>
+            <button id="register-button">Register</button>
+        </div>
+        <div id="input-field">
+            <label >Enter Your Email</label>
+            <br>
+            <input type="text"  required >
+            <br>
+            <label >Enter Your Password</label>
+            <br>
+            <input type="password" placeholder="Password" required >
+        </div>
+        <div id="submit-button">
+            <button id="btn" type="submit">Login</button>
+        </div>
+    </div>
+{% endblock layout %}
